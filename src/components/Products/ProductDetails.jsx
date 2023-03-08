@@ -22,6 +22,7 @@ const ProductDetails = () => {
         dispatch(selectedProduct(response.data));
     };
 
+
     useEffect(() => {
         if (productId && productId !== "") fetchProductDetail(productId);
         return () => {
@@ -30,9 +31,10 @@ const ProductDetails = () => {
     }, [productId]);
 
 
-const addProduct = (product) => {
-    dispatch(addCart(product))
-}
+    const addProduct = (product) => {
+        dispatch(addCart(product))
+        
+    }
 
     return (
         <div className="ui grid container">

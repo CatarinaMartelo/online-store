@@ -1,51 +1,35 @@
-const cart = []
-
+const savedCart = localStorage.getItem('cart');
+const cart = savedCart ? JSON.parse(savedCart) : [];
 
 const cartReducer = (state = cart, action) => {
-    const product = action.payload;
+  const product = action.payload;
 
-    switch(action.type) {
-        case "ADDITEM":
-            const exist = state.find((x) => x.id === product.id);
-            if (exist){
-                return state.map((x) => x.id === product.id ? {...x, qty: x.qty + 1} : x.qty + 1);
-            }else{
-                const product = action.payload;
-                return[
-                    ...state, 
-                    {
-                        ...product,
-                        qty: 1,
-                        
-                    }
-                 
-                ]
-                
-            }
-            
+  switch (action.type) {
+    case "ADDITEM":
+        const existingProduct = state.find((x) => x.id === product.id);
+        if (existingProduct) {
+          return state;
+        } else {
+          return [...state, { ...product, qty: 1 }];
+        }
 
-            case "DELITEM": 
-            const exist1 = state.find((x)=> x.id === product.id);
-            if (exist1.qty === 1){
-                return state.filter((x) => x.id !== exist1.id);
+    case "DELITEM":
+        const updatedCart = state.map((x) =>
+        x.id === product.id ? { ...x, qty: x.qty - 1 } : x
+      ).filter((x) => x.qty !== 0);
+      return updatedCart;
 
-            }else {
-                return state.map((x)=> x.id === product.id ? {...x, qty: x.qty-1} : x)
-            }
-            
+      case "CHANGE_CART_QTY":
+        return state.map((product) =>
+          product.id === action.payload.id
+            ? { ...product, qty: action.payload.qty }
+            : product
+        );
+    
+  }
+  
+  localStorage.setItem('cart', JSON.stringify(state));
+  return state;
+};
 
-                case "CHANGE_CART_QTY":
-                    return {
-                      ...state,
-                      cart: state.cart.filter((c) =>
-                        c.id === action.payload.id ? (c.qty = action.payload.qty) : c.qty
-                      ),
-                    };
-                  default:
-                    return state;
-                }
-              };
-            
-
-
-export default cartReducer
+export default cartReducer;

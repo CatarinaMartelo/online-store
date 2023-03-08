@@ -50,12 +50,12 @@ const Cart = () => {
                             <Form.Control
                     as="select"
                     value={product.qty}
-                    onChange={(product) =>
+                    onChange={(event) =>
                       dispatch({
                         type: "CHANGE_CART_QTY",
                         payload: {
                           id: product.id,
-                          qty: product.target.value,
+                          qty: event.target.value,
                         },
                       })
                     }

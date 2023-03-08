@@ -20,6 +20,9 @@ const Navbar = () => {
       name: "Products",
       path: "/products",
     },
+    {
+      name: "Categories",
+    },
   ];
 
   const dispatch = useDispatch();
