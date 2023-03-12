@@ -2,7 +2,7 @@ import { Button, Col, Form, Image, ListGroup, ListGroupItem, Row } from "react-b
 import { AiFillDelete } from "react-icons/ai";
 import {  useDispatch, useSelector } from "react-redux";
 import {useState, useEffect} from "react"
-import { ShoppingButton } from "./shopping-button";
+import { ShoppingButton } from "../../components/Buttons/shopping-button";
 
 
 

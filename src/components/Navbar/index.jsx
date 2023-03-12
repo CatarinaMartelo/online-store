@@ -13,15 +13,12 @@ const Navbar = () => {
 
   const navList = [
     {
-      name: "Home",
+      name: "🏠 Home",
       path: "/",
     },
     {
-      name: "Products",
+      name: "🛍 Products",
       path: "/products",
-    },
-    {
-      name: "Categories",
     },
   ];
 
@@ -37,7 +34,7 @@ const Navbar = () => {
       <Title>Online Store</Title>
       </NavbarLogo>
       </Link>
-      <Navigation>
+      {<Navigation>
         {navList.map((item) => (
           <NavOption key={item.name} to={item.path}>
           <NavLabel active={location.pathname === item.path}>
@@ -46,8 +43,8 @@ const Navbar = () => {
       </NavOption>
  
         ))}
-        <SearchBar type="text" placeholder="Search a product" aria-label="Search"/>
-      </Navigation>
+
+      </Navigation>}
   
       
       <Dropdown>

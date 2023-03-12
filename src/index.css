@@ -179,10 +179,39 @@ button.ui.circular.icon.button{
   
   .summary {
     width: 30%;
+    background-color: #7373739e;
   }
+
+
 
   /* ---------- CART ------------ */
 
   button.btn.btn-primary{
     margin-top: 20px!important
   }
+
+  /* ----------- PRODUCTS --------- */
+
+  .categories{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  /* ----------- NAVBAR ------------ */
+
+  *{
+    text-decoration: none!important
+  }
+
+  .btn-primary{
+    background-color: #000000!important;
+    border: 0px solid #000000!important
+  }
+
+  .gqbUUb{
+    text-align: center;
+    font-size: 30px;
+  }
+  

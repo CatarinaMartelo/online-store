@@ -22,7 +22,7 @@ export const Logo = styled.img`
 `;
 
 export const Title = styled.div`
-font-size: 20px;
+font-size: 40px;
 color: #ffffff;
 padding-left: 20px;
 font-weight: bold;

@@ -4,13 +4,16 @@ import 'react-slideshow-image/dist/styles.css'
 
 const fadeImages = [
   {
-    url: 'https://cdn.shopify.com/s/files/1/2006/5615/articles/TechniMobili-Blog-5RulesForBuying.jpg?v=1510251949',
+    url: '/hero1.jpeg',
   },
   {
-    url: 'https://scandasia.com/wp-content/uploads/2021/02/shutterstock_463253993.jpg',
+    url: '/hero2.jpg',
   },
   {
-    url: 'https://www.atlantichub.com/wp-content/uploads/2020/07/consumo-capa.jpg',
+    url: '/hero3.avif',
+  },
+  {
+    url: '/hero4.jpg',
   },
 ];
 

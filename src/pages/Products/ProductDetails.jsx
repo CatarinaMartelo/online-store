@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { selectedProduct, removeSelectedProduct } from "../../redux/actions/productsActions";
 import {RxCross1} from "react-icons/rx"
-import { Button } from "../cross-button";
+import { Button } from "../../components/Buttons/cross-button";
 import { addCart } from "../../redux/actions/cartActions";
 
 const ProductDetails = () => {
