@@ -1,6 +1,6 @@
 
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import ProductListing from '../pages/Products/ProductListing';
 import ProductDetails from '../pages/Products/ProductDetails';
 import Cart from '../pages/Cart/Cart';
