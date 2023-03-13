@@ -33,8 +33,9 @@ font-family: 'Satisfy', cursive;
 export const Navigation = styled.nav`
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  padding-right: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 160px 0 0!important
 `;
 
 export const NavOption = styled(Link)`
@@ -50,7 +51,8 @@ type NavLabelProps = {
 };
 
 export const NavLabel = styled.span<NavLabelProps>`
-`;
+font-size: 50px;
+    font-family: 'Amatic SC', cursive;`;
 
 export const CartIcon = styled.img`
   width: 30px;
