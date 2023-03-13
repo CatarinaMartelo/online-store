@@ -3,16 +3,16 @@ import 'react-slideshow-image/dist/styles.css'
 
 const fadeImages = [
   {
-    url: '/hero1.jpeg',
+    url: '/online-store/hero1.jpeg',
   },
   {
-    url: '/hero2.jpg',
+    url: '/online-store/hero2.jpg',
   },
   {
-    url: '/hero3.avif',
+    url: '/online-store/hero3.avif',
   },
   {
-    url: '/hero4.jpg',
+    url: 'online-store/hero4.jpg',
   },
 ];
 
