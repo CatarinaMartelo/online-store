@@ -35,4 +35,6 @@ export const router = createBrowserRouter([
         },
       ],
     },
-  ])
+  ],{
+    basename: "/online-store"
+  });
