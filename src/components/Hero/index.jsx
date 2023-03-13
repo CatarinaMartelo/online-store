@@ -3,9 +3,6 @@ import 'react-slideshow-image/dist/styles.css'
 
 const fadeImages = [
   {
-    url: '/online-store/hero1.jpeg',
-  },
-  {
     url: '/online-store/hero2.jpg',
   },
   {
