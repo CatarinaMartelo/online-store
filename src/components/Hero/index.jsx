@@ -9,7 +9,7 @@ const fadeImages = [
     url: '/online-store/hero3.avif',
   },
   {
-    url: 'online-store/hero4.jpg',
+    url: '/online-store/hero4.jpg',
   },
 ];
 
