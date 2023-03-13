@@ -1,7 +1,7 @@
 import { Button, Dropdown } from "react-bootstrap";
 import Badge from "react-bootstrap/esm/Badge";
 import { Link, useLocation } from "react-router-dom";
-import { Container, Logo, NavbarLogo, Navigation, NavOption, Title, NavLabel, SearchBar} from "./styles";
+import { Container, Logo, NavbarLogo, Navigation, NavOption, Title, NavLabel} from "./styles";
 import { FaShoppingCart } from "react-icons/fa"
 import { AiFillDelete } from "react-icons/ai"
 import { useDispatch, useSelector } from "react-redux";
