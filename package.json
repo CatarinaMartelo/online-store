@@ -2,6 +2,7 @@
   "name": "react-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://catarinamartelo.github.io/online-store/",
   "dependencies": {
     "@heroicons/react": "^2.0.16",
     "@reduxjs/toolkit": "^1.9.2",
