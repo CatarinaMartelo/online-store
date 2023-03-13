@@ -13,11 +13,7 @@ const Navbar = () => {
 
   const navList = [
     {
-      name: "🏠 Home",
-      path: "/",
-    },
-    {
-      name: "🛍 Products",
+      name: "↝ Products ↜",
       path: "/products",
     },
   ];

@@ -27,6 +27,7 @@ color: #ffffff;
 padding-left: 20px;
 font-weight: bold;
 text-decoration: none;
+font-family: 'Satisfy', cursive;
 `;
 
 export const Navigation = styled.nav`
